@@ -1,53 +1,6 @@
-# This file lists the Python packages required to run the Financial Q&A System.
-# Install these dependencies using pip:
-# pip install -r requirements.txt
-
-# --- Core Libraries ---
-# requests: Used for making HTTP requests to download 10-K filings from the SEC EDGAR database.
-requests
-
-# beautifulsoup4: Essential for parsing the HTML content of the downloaded 10-K filings
-# and extracting clean, readable text.
-beautifulsoup4
-
-# sentence-transformers: A library for state-of-the-art sentence embeddings.
-# It's used to convert text chunks and user queries into numerical vector representations
-# for semantic search. The 'all-MiniLM-L6-v2' model is specifically used in this project.
-sentence-transformers
-
-# scikit-learn: Provides machine learning tools, specifically used here for
-# calculating cosine similarity between embeddings to find relevant text chunks.
-sklearn
-
-# numpy: A fundamental package for numerical computing in Python,
-# extensively used for handling and performing operations on numerical arrays (embeddings).
-numpy
-
-# groq: The official Python client library for interacting with the Groq API.
-# This is used to send prompts to the Groq LLM for query decomposition and answer synthesis.
-groq
-
-# --- Configuration Notes (Crucial for Project Functionality) ---
-
-# 1. SEC EDGAR Downloader User-Agent (in 'downloader.ipynb'):
-#    The SEC (U.S. Securities and Exchange Commission) requires a 'User-Agent' header
-#    for all programmatic access to their EDGAR database. This identifies your application
-#    and provides contact information, which is vital for compliance and responsible usage.
-#    ACTION REQUIRED:
-#    Before running 'downloader.ipynb', open the file and locate the `HEADERS` dictionary.
-#    Update the 'User-Agent' string with a unique name for your project and your
-#    personal email address. For example:
-#    HEADERS = {"User-Agent": "YourFinancialBot/1.0 (your.email@example.com)"}
-
-# 2. Groq API Key (in 'agent_query_engine.ipynb'):
-#    To utilize the Large Language Model (LLM) capabilities provided by Groq,
-#    you need a valid API key. This key authenticates your requests and manages your usage.
-#    ACTION REQUIRED:
-#    Before running 'agent_query_engine.ipynb' (or 'main.ipynb' which calls it),
-#    open 'agent_query_engine.ipynb' and find the `client = Groq(api_key=...)` line.
-#    Replace the placeholder string with your actual Groq API key, obtained from
-#    the Groq console. For example:
-#    client = Groq(api_key="gsk_YOUR_ACTUAL_GROQ_API_KEY_HERE")
-#    SECURITY NOTE: For production environments, it is highly recommended to store
-#    API keys securely as environment variables (e.g., `os.environ.get("GROQ_API_KEY")`)
-#    rather than hardcoding them directly in your script.
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+sentence-transformers>=2.2.2
+scikit-learn>=1.3.0
+numpy>=1.26.0
+groq>=0.9.0
