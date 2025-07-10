@@ -1,0 +1,31 @@
+{
+  "query": "Compare AI investments mentioned by all three companies (Google, Microsoft, NVIDIA) in their 2024 10-Ks.",
+  "answer": "Could not generate answer due to LLM error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}. Please check your Groq API key and model access.",
+  "reasoning": "Original query processed as a single search.\nRetrieving information for sub-query: 'Compare AI investments mentioned by all three companies (Google, Microsoft, NVIDIA) in their 2024 10-Ks.'\nLLM synthesis failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+  "sub_queries": [
+    "Compare AI investments mentioned by all three companies (Google, Microsoft, NVIDIA) in their 2024 10-Ks."
+  ],
+  "sources": [
+    {
+      "company": "NVDA",
+      "year": "2024",
+      "fiscal_year": "N/A",
+      "excerpt": " processors optimized for generative AI, LLMs and other AI workloads. We introduced NVIDIA DGX Cloud and AI Foundations to help businesses create and operate custom large language models and generative AI models. As AV algorithms move to video transformers, and more cars are equipped with cameras, w...",
+      "score": 0.6236517555921401
+    },
+    {
+      "company": "NVDA",
+      "year": "2022",
+      "fiscal_year": "N/A",
+      "excerpt": "izing oil exploration and drilling. These organizations include the world\u2019s leading consumer internet and cloud services companies, enterprises and startups seeking to implement AI in transformative ways across multiple industries. We partnered with industry leaders such as Amazon, Inc., or Amazon, ...",
+      "score": 0.6169112605159475
+    },
+    {
+      "company": "NVDA",
+      "year": "2023",
+      "fiscal_year": "N/A",
+      "excerpt": "on, and Automotive. Revenue for fiscal year 2023 revenue was $26.97 billion, flat compared with a year ago. 37 Table of Contents Data Center revenue was up 41% from a year ago led by strong growth from hyperscale customers and also reflects purchases made by several CSP partners to support multi-yea...",
+      "score": 0.5960346558196505
+    }
+  ]
+}

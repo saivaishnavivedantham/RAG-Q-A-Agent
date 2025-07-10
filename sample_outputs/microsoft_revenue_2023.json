@@ -1,0 +1,31 @@
+{
+  "query": "What was Microsoft's total revenue in 2023?",
+  "answer": "Could not generate answer due to LLM error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}. Please check your Groq API key and model access.",
+  "reasoning": "Original query processed as a single search.\nRetrieving information for sub-query: 'What was Microsoft's total revenue in 2023?'\nLLM synthesis failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+  "sub_queries": [
+    "What was Microsoft's total revenue in 2023?"
+  ],
+  "sources": [
+    {
+      "company": "MSFT",
+      "year": "2022",
+      "fiscal_year": "N/A",
+      "excerpt": "ings, was as follows: (In millions) Year Ended June\u00a030, 2022 2021 2020 Server products and cloud services $ 67,321 $ 52,589 $ 41,379 Office products and cloud services 44,862 39,872 35,316 Windows 24,761 22,488 21,510 Gaming 16,230 15,370 11,575 LinkedIn 13,816 10,289 8,077 Search and news advertisi...",
+      "score": 0.70220318518741
+    },
+    {
+      "company": "MSFT",
+      "year": "2022",
+      "fiscal_year": "N/A",
+      "excerpt": "th fiscal year 2021 included: \u2022 Microsoft Cloud (formerly commercial cloud) revenue increased 32% to $91.2 billion. \u2022 Office Commercial products and cloud services revenue increased 13% driven by Office 365 Commercial growth of 18%. \u2022 Office Consumer products and cloud services revenue increased 11%...",
+      "score": 0.6912652576607645
+    },
+    {
+      "company": "MSFT",
+      "year": "2024",
+      "fiscal_year": "N/A",
+      "excerpt": "d cloud services revenue growth Revenue from Windows Commercial products and cloud services, comprising volume licensing of the Windows operating system, Windows cloud services, and other Windows commercial offerings Devices revenue growth Revenue from Devices, including Surface, HoloLens, and PC ac...",
+      "score": 0.6869078033537748
+    }
+  ]
+}

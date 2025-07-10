@@ -1,0 +1,31 @@
+{
+  "query": "How did NVIDIA's data center revenue grow from 2022 to 2023?",
+  "answer": "Could not generate answer due to LLM error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}. Please check your Groq API key and model access.",
+  "reasoning": "Original query processed as a single search.\nRetrieving information for sub-query: 'How did NVIDIA's data center revenue grow from 2022 to 2023?'\nLLM synthesis failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+  "sub_queries": [
+    "How did NVIDIA's data center revenue grow from 2022 to 2023?"
+  ],
+  "sources": [
+    {
+      "company": "NVDA",
+      "year": "2024",
+      "fiscal_year": "N/A",
+      "excerpt": " Data Center, Gaming, Professional Visualization, and Automotive. Revenue for fiscal year 2024 was $60.9 billion, up 126% from a year ago. Data Center revenue for fiscal year 2024 was up 217%. Strong demand was driven by enterprise software and consumer internet applications, and multiple industry v...",
+      "score": 0.7413191764853586
+    },
+    {
+      "company": "NVDA",
+      "year": "2024",
+      "fiscal_year": "N/A",
+      "excerpt": " \"Compute & Networking\" and \"Graphics.\" Refer to Note 17 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information. Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorp...",
+      "score": 0.737653664009121
+    },
+    {
+      "company": "NVDA",
+      "year": "2023",
+      "fiscal_year": "N/A",
+      "excerpt": "and and $1.13 billion for inventory purchase obligations in excess of our demand expectations. Operating expenses, which included a $1.35 billion acquisition termination charge related to the Arm transaction, were up 50% from a year ago. The increase also reflected compensation, data center infrastr...",
+      "score": 0.736074690339444
+    }
+  ]
+}
