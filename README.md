@@ -186,5 +186,3 @@ This project is provided for educational and demonstration purposes.
 * This implementation does not use a vector database like FAISS; everything is done in-memory.
 * All embeddings are precomputed and stored in `data/embedded_chunks.json`.
 * You may expand the system to include more companies or years by re-running the extract → chunk → embed pipeline.
-
-```
