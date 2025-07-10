@@ -23,17 +23,24 @@ The system supports basic, comparative, cross-company, segment-level, and AI str
 ```
 
 .
-├── agent\_query\_engine.ipynb      # Main notebook (RAG agent)
+├── main.ipynb # Entry notebook to run end-to-end agent
+├── agent_query_engine.ipynb # Core logic for query decomposition and RAG answering
+├── embedder.ipynb # Embeds chunked text using sentence-transformers
+├── chunker.ipynb # Splits extracted 10-K text into semantic chunks
+├── extractor.ipynb # Parses and extracts text from 10-K filings
+├── downloader.ipynb # (Optional) Script to download 10-Ks from EDGAR
+├── requirements.txt # Dependencies for this project
+
 ├── data/
-│   └── embedded\_chunks.json      # Vector-embedded chunks of 10-K text
-├── utils/
-│   ├── downloader.py             # Optional: fetch 10-Ks from EDGAR
-│   ├── extractor.py              # Clean and extract 10-K text
-│   ├── chunker.py                # Chunk long text into meaningful sections
-│   └── embedder.py               # Create and store embeddings
-├── requirements.txt
-├── README.md
-└── example\_outputs/              # Sample responses (optional)
+│   ├── embedded_chunks.json         # Final embedded vector chunks
+│   └── extracted/
+│       └── NVDA_2024_10K.txt        # Example raw text of 10-K after extraction
+
+├── chunks/
+│   └── all_chunks.json              # Chunked text before embedding
+
+├── sample_outputs/
+    └── ai_investments_comparison_2024.json  # Example JSON output for testing
 
 ````
 
